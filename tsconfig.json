@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "jsx": "react",
+    "noImplicitAny": true,
+    "strict": false,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "typeRoots": [
+    ],
+    "lib": [
+      "dom",
+      "es2015"
+    ],
+    "types": [
+    ],
+    "importHelpers": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
