@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const path = require('path');
-const qlickPath = 'C:\\Users\\binu.balan\\Documents\\Qlik\\Sense\\Extensions\\KPIChatPocQlikExt\\';
+const qlickPath = 'C:\\Users\\nikhil.t\\Documents\\Qlik\\Sense\\Extensions\\KPIChatPocQlikExt\\';
 // const qlickPath = './dist/';
 module.exports = {
     mode: 'production',
@@ -13,10 +13,10 @@ module.exports = {
         extensions: ['.ts', '.tsx', '.html', '.js', '.json']
     },
     output: {
-        path: path.resolve(qlickPath),
-        filename: "app.js",
-        library: '',
-        libraryTarget: "amd"
+        path: path.resolve(qlickPath)
+        // filename: "app.js",
+        // library: '',
+        // libraryTarget: "amd"
     },
     target: 'web',
     plugins: [

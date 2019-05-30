@@ -3,6 +3,7 @@ import * as ReactDOM from 'react-dom';
 import {Button} from "semantic-ui-react";
 import {APIService} from "../services/api.service";
 import {IUser} from "../classes/user";
+import {DemoComponent} from "./demo.component";
 
 /**
  * react component AppComponent state
@@ -89,6 +90,7 @@ export class AppComponent extends React.Component<IProps, IAppState> {
                         }
                     })
                 }} content="Get users"/>
+                <DemoComponent />
             </div>
         );
     }

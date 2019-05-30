@@ -1,10 +1,10 @@
  import './style.less';
 import {AppComponent} from './components/app.component';
 
- export {
-     AppComponent
- }
+ // export {
+ //     AppComponent
+ // }
 
-// const element = document.getElementById("app");
-//
-// AppComponent.initApp(element,"Default KPI");
+const element = document.getElementById("app");
+
+AppComponent.initApp(element,"Default KPI");
