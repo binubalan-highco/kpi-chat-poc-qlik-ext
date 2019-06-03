@@ -8,6 +8,7 @@
     "esModuleInterop": true,
     "sourceMap": true,
     "typeRoots": [
+      "./types"
     ],
     "lib": [
       "dom",
