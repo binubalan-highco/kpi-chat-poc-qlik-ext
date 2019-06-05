@@ -68,7 +68,7 @@ export class APIService{
                 context: string;
                 data: any;
             };
-            iRequest.context = config.API.CONTEXT.GETALLUSERS;
+            iRequest.context = config.API.CONTEXT.GET_ALLUSERS;
             iRequest.data = {
                 token:token
             };
