@@ -1,14 +1,21 @@
 export const config = {
     API:{
         CONTEXT:{
-            GETTOKEN:"eer355s",
-            GETMESSAGES:"ae1167f",
-            GETALLUSERS:"GETALLUSERS"
+            GET_TOKEN:"eer355s",
+            GET_MESSAGES:"ae1167f",
+            GET_ALLUSERS:"GETALLUSERS"
         },
         REMOTE_URL:"http://11.100.109.22:8091/api"
     },
     APP:{
         TOKEN_KEY:"KPI-CHAT-TOKEN"
+    },
+    WS:{
+      REMOTE_URL:"http://11.100.109.22:8092/kpichat",
+      CONTEXT:{
+          ON_JOIN:"aur2od",
+          ON_MESSAGE:"sadetsd",
+          ON_PING:"a00001"
+      }
     }
-
 }
