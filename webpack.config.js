@@ -2,10 +2,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const path = require('path');
-const qlickPath = 'C:\\Users\\binu.balan\\Documents\\Qlik\\Sense\\Extensions\\KPIChatPocQlikExt\\';
+const qlickPath = 'C:\\Users\\jeffrey.bonson\\Documents\\Qlik\\Sense\\Extensions\\KPIChatPocQlikExt\\';
 // const qlickPath = './dist/';
 module.exports = {
-    mode: 'production',
+    mode: 'development',
     entry: {
         app: './src/index.ts'
     },

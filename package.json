@@ -26,8 +26,10 @@
   "dependencies": {
     "@types/semantic-ui": "^2.2.7",
     "axios": "^0.18.0",
+    "ckeditor4-react": "^1.0.0-beta",
     "install": "^0.12.2",
     "npm": "^6.9.0",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router": "^5.0.0",
