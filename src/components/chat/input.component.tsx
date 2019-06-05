@@ -4,6 +4,7 @@ import CKEditor from 'ckeditor4-react';
 export class ChatInput extends React.Component {
 
     showOriginalEditor(){
+        //show
         let original = document.getElementById('originalEditor');
         let dummy = document.getElementById('dummyEditor');
         let inputWrapper = document.getElementById('inputWrapper');
