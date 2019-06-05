@@ -2,8 +2,8 @@ import * as React from 'react';
 
 export class ChatBody extends React.Component {
 
-    private lorem:string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
-    private defaultImage:string = "../../../src/images/1.png"
+    private lorem:string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.";
+    private defaultImage:string = "../../../src/images/1.png";
 
     render() {
         return (

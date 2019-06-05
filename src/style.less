@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-body {
+body{
   height: 100%;
   margin: 0;
   padding: 0;
@@ -23,7 +23,7 @@ body {
   overflow:hidden;
 }
 
-.chat-area-container {
+.chat-area-container{
   display: inline-block;
   vertical-align: bottom;
   height: 100%;
@@ -47,7 +47,8 @@ body {
 
   .actions{color:gray;
     i{
-      margin-right:15px; cursor:pointer;
+      margin-right:15px;
+      cursor:pointer;
       height: auto;
       width: auto; font-size:16px;
       transition-property: background;
@@ -59,7 +60,7 @@ body {
   }
 }
 
-.chat-area {
+.chat-area{
   height: calc(100% - 88px);
   width:100%;
   background-color: #ffffff;
@@ -67,7 +68,7 @@ body {
   margin-top:40px;
 
 
-  ul {
+  ul{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -75,12 +76,12 @@ body {
     height:100%;
   }
 
-  li {
+  li{
     padding: 24px 0;
     border-bottom: 1px solid #e0e0e0;
     display: flex;
 
-    .messageWrapper {
+    .messageWrapper{
       color: #131212;
       display:flex;
       flex-direction: column;
@@ -91,8 +92,7 @@ body {
         display: flex;
         padding-left: 20px;
 
-
-        .avatar {
+        .avatar{
           width: 45px;
           height: auto;
           min-height:45px;
@@ -108,13 +108,13 @@ body {
           width:90%;
           padding-left: 10px;
 
-          h2 {
+          h2{
             font-size: 18px;
             margin: 0;
             font-family: 'Lato', sans-serif;
           }
 
-          h4 {
+          h4{
             margin-top: 2px;
             font-size: 14px;
             font-family: 'Lato', sans-serif;
@@ -128,7 +128,11 @@ body {
           display: flex;
           font-size: 14px;
 
-          i{padding:10px; cursor:pointer; margin-right:10px;
+          i
+          {
+            padding:10px;
+            cursor:pointer;
+            margin-right:10px;
             border-radius: 50%;
             width: 25px;
             height: 25px;
@@ -158,15 +162,15 @@ body {
     }
   }
 
-  li:last-child {
-    border-bottom: 0;
-  }
+  li:last-child {border-bottom: 0;}
 }
 
 .inputWrapper
 {
-  position:absolute; display:flex;
-  bottom:0px; border-top:1px solid lightgray;
+  position:absolute;
+  display:flex;
+  bottom:0px;
+  border-top:1px solid lightgray;
   height:63px;
   width:100%;
   left:0;
@@ -196,12 +200,22 @@ body {
 
     &:hover{background:#2571a9;}
 
-    i{cursor: pointer;    margin-left: 4px; margin:0 0 0 4px; padding:0; font-size:2em;}
+    i
+    {
+      cursor: pointer;
+      margin:0 0 0 4px;
+      padding:0;
+      font-size:2em;
+    }
   }
 
   textarea
   {
-    border:0; width:100%; height:100%; padding:5px; font-family: inherit;
+    border:0;
+    width:100%;
+    height:100%;
+    padding:5px;
+    font-family: inherit;
     resize: none;
   }
 
@@ -209,13 +223,19 @@ body {
 
   .cke_reset, .cke_contents{height:100% !important;}
 
-  .hideEditor{display:none;opacity: 0;}
+  .hideEditor
+  {
+    display:none;
+    opacity: 0;
+  }
 
-  .showEditor{display:block;animation: fade-in 0.8s;
+  .showEditor
+  {
+    display:block;
+    animation: fade-in 0.8s;
   }
 
   .cke_chrome{border:0 !important;}
-
 }
 
 .fullScreen{height:20em !important;}

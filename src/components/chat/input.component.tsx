@@ -1,29 +1,9 @@
 import * as React from 'react';
 import CKEditor from 'ckeditor4-react';
-//import CKEditor from '@ckeditor/ckeditor5-react';
-// import BalloonEditor from '@ckeditor/ckeditor5-build-balloon';
 
+export class ChatInput extends React.Component {
 
-interface ITestState {
-    ckeVisibility: boolean
-}
-type IProps ={
-
-}
-export class ChatInput extends React.Component<IProps,ITestState> {
-
-    constructor(props:IProps)
-    {
-        super(props);
-
-        this.state =
-        {
-            ckeVisibility: false
-        };
-    }
-
-    showOriginalEditor()
-    {
+    showOriginalEditor(){
         let original = document.getElementById('originalEditor');
         let dummy = document.getElementById('dummyEditor');
         let inputWrapper = document.getElementById('inputWrapper');
@@ -37,8 +17,7 @@ export class ChatInput extends React.Component<IProps,ITestState> {
         inputWrapper.classList.add("fullScreen");
     }
 
-    submitChat()
-    {
+    submitChat(){
         let original = document.getElementById('originalEditor');
         let dummy = document.getElementById('dummyEditor');
         let inputWrapper = document.getElementById('inputWrapper');
@@ -52,24 +31,17 @@ export class ChatInput extends React.Component<IProps,ITestState> {
         inputWrapper.classList.remove("fullScreen");
     }
 
-
-
-    render() {
+   render(){
         return (
             <div className='inputWrapper' id='inputWrapper'>
-
                 <div id='originalEditor' className='hideEditor'>
                     <CKEditor data="<p>This is an example CKEditor 4 instance.</p>"/>
                 </div>
-
                 <div id='dummyEditor' className='showEditor'>
                     <textarea id='dummyTextArea'  placeholder='Enter Comments' onClick={this.showOriginalEditor}/>
                 </div>
-
                 <button  onClick={this.submitChat}><i className='caret right icon' /> </button>
             </div>
         )
     }
-
-
 }
