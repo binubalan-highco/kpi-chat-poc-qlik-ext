@@ -25,7 +25,7 @@
   "homepage": "https://github.com/binubalan-highco/kpi-chat-poc-qlik-ext#readme",
   "dependencies": {
     "@types/semantic-ui": "^2.2.7",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "ckeditor4-react": "^1.0.0-beta",
     "install": "^0.12.2",
     "npm": "^6.9.0",
